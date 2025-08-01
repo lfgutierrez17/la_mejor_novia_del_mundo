@@ -3,52 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Feliz Día de la Novia 💖</title>
+  <title>Feliz Día de la Novia</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+      background: #fff0f5;
       font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
     }
-    .container {
-      padding: 40px 20px;
-    }
-    img {
-      width: 90%;
-      max-width: 500px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
+
     h1 {
       color: #d63384;
-      font-size: 2.5em;
       margin-top: 20px;
     }
+
     p {
+      color: #444;
       font-size: 1.2em;
-      color: #555;
       max-width: 600px;
-      margin: 20px auto;
+      margin: 20px;
     }
+
+    .tulipanes {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .tulipan {
+      position: relative;
+      width: 30px;
+      height: 100px;
+    }
+
+    .tallo {
+      width: 4px;
+      height: 100px;
+      background: green;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .flor {
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 25px solid #e75480;
+      clip-path: polygon(50% 0%, 100% 100%, 75% 80%, 50% 100%, 25% 80%, 0% 100%);
+    }
+
     footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #aaa;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.imgur.com/w3r9T3G.jpg" alt="Tulipanes para ti">
-    <h1>Feliz Día de la Novia 💖</h1>
-    <p>
-      Hoy celebro la suerte de tenerte en mi vida. <br>
-      Tus sonrisas, tus palabras y tu amor hacen que cada día sea especial. <br>
-      Gracias por ser mi novia, mi compañera y mi felicidad.
-    </p>
-    <footer>Con todo mi amor 💕</footer>
+  <h1>💐 Feliz Día de la Novia 💐</h1>
+
+  <p>
+    Como estos tulipanes, así florece mi amor por ti. <br>
+    Gracias por regalarme tu sonrisa, tu tiempo y tu corazón.<br>
+    Hoy y siempre 🌷
+  </p>
+
+  <div class="tulipanes">
+    <div class="tulipan">
+      <div class="tallo"></div>
+      <div class="flor"></div>
+    </div>
+    <div class="tulipan">
+      <div class="tallo"></div>
+      <div class="flor"></div>
+    </div>
+    <div class="tulipan">
+      <div class="tallo"></div>
+      <div class="flor"></div>
+    </div>
   </div>
+
+  <footer>Hecho con amor 💖</footer>
 </body>
 </html>
